@@ -1,0 +1,789 @@
+{
+  "stores": [
+    {
+      "store_id": "store_1001",
+      "name": "North Market Demo Store",
+      "timezone": "America/New_York"
+    },
+    {
+      "store_id": "store_1002",
+      "name": "Riverfront Demo Store",
+      "timezone": "America/New_York"
+    },
+    {
+      "store_id": "store_1003",
+      "name": "Hilltop Demo Store",
+      "timezone": "America/New_York"
+    }
+  ],
+  "products": [
+    {
+      "sku": "SKU-MILK-001",
+      "upc": "0001111040101",
+      "name": "Organic Whole Milk",
+      "brand": "Simple Farms",
+      "category": "dairy",
+      "size": "64 fl oz",
+      "image_url": "https://placehold.co/320x240?text=Organic+Milk",
+      "tags": [
+        "organic",
+        "milk",
+        "dairy",
+        "breakfast"
+      ],
+      "base_price": 4.99,
+      "sale_price": 4.49,
+      "loyalty_price": 4.29
+    },
+    {
+      "sku": "SKU-EGGS-001",
+      "upc": "0001111040102",
+      "name": "Large Brown Eggs",
+      "brand": "Farm Basket",
+      "category": "dairy",
+      "size": "12 ct",
+      "image_url": "https://placehold.co/320x240?text=Eggs",
+      "tags": [
+        "eggs",
+        "breakfast",
+        "protein"
+      ],
+      "base_price": 3.79,
+      "sale_price": 3.49,
+      "loyalty_price": 3.29
+    },
+    {
+      "sku": "SKU-BREAD-001",
+      "upc": "0001111040103",
+      "name": "Sourdough Bread",
+      "brand": "Bakery Lane",
+      "category": "bakery",
+      "size": "24 oz",
+      "image_url": "https://placehold.co/320x240?text=Bread",
+      "tags": [
+        "bread",
+        "bakery",
+        "dinner"
+      ],
+      "base_price": 4.29,
+      "sale_price": 3.99,
+      "loyalty_price": 3.79
+    },
+    {
+      "sku": "SKU-APPLE-001",
+      "upc": "0001111040104",
+      "name": "Honeycrisp Apples",
+      "brand": "Orchard Valley",
+      "category": "produce",
+      "size": "1 lb",
+      "image_url": "https://placehold.co/320x240?text=Apples",
+      "tags": [
+        "apples",
+        "fruit",
+        "produce"
+      ],
+      "base_price": 2.99,
+      "sale_price": 2.49,
+      "loyalty_price": 2.39
+    },
+    {
+      "sku": "SKU-BANANA-001",
+      "upc": "0001111040105",
+      "name": "Bananas",
+      "brand": "Fresh Pick",
+      "category": "produce",
+      "size": "1 lb",
+      "image_url": "https://placehold.co/320x240?text=Bananas",
+      "tags": [
+        "bananas",
+        "fruit",
+        "produce"
+      ],
+      "base_price": 0.69,
+      "sale_price": 0.59,
+      "loyalty_price": 0.55
+    },
+    {
+      "sku": "SKU-PASTA-001",
+      "upc": "0001111040106",
+      "name": "Penne Pasta",
+      "brand": "Casa Roma",
+      "category": "pantry",
+      "size": "16 oz",
+      "image_url": "https://placehold.co/320x240?text=Pasta",
+      "tags": [
+        "pasta",
+        "italian",
+        "dinner",
+        "pantry"
+      ],
+      "base_price": 2.49,
+      "sale_price": 1.99,
+      "loyalty_price": 1.79
+    },
+    {
+      "sku": "SKU-SAUCE-001",
+      "upc": "0001111040107",
+      "name": "Classic Marinara Pasta Sauce",
+      "brand": "Casa Roma",
+      "category": "pantry",
+      "size": "24 oz",
+      "image_url": "https://placehold.co/320x240?text=Pasta+Sauce",
+      "tags": [
+        "pasta sauce",
+        "sauce",
+        "italian",
+        "dinner"
+      ],
+      "base_price": 3.49,
+      "sale_price": 2.99,
+      "loyalty_price": 2.79
+    },
+    {
+      "sku": "SKU-CEREAL-001",
+      "upc": "0001111040108",
+      "name": "Honey Oat Cereal",
+      "brand": "Morning Bowl",
+      "category": "pantry",
+      "size": "18 oz",
+      "image_url": "https://placehold.co/320x240?text=Cereal",
+      "tags": [
+        "cereal",
+        "breakfast",
+        "sale"
+      ],
+      "base_price": 5.49,
+      "sale_price": 4.49,
+      "loyalty_price": 4.19
+    },
+    {
+      "sku": "SKU-COFFEE-001",
+      "upc": "0001111040109",
+      "name": "Medium Roast Ground Coffee",
+      "brand": "North Star",
+      "category": "beverages",
+      "size": "12 oz",
+      "image_url": "https://placehold.co/320x240?text=Coffee",
+      "tags": [
+        "coffee",
+        "breakfast",
+        "beverage"
+      ],
+      "base_price": 8.99,
+      "sale_price": 7.99,
+      "loyalty_price": 7.49
+    },
+    {
+      "sku": "SKU-TOWEL-001",
+      "upc": "0001111040110",
+      "name": "Paper Towels",
+      "brand": "HomeKind",
+      "category": "household",
+      "size": "6 rolls",
+      "image_url": "https://placehold.co/320x240?text=Paper+Towels",
+      "tags": [
+        "paper towels",
+        "household",
+        "cleaning"
+      ],
+      "base_price": 9.99,
+      "sale_price": 8.99,
+      "loyalty_price": 8.49
+    },
+    {
+      "sku": "SKU-DETERGENT-001",
+      "upc": "0001111040111",
+      "name": "Free & Clear Laundry Detergent",
+      "brand": "HomeKind",
+      "category": "household",
+      "size": "92 fl oz",
+      "image_url": "https://placehold.co/320x240?text=Detergent",
+      "tags": [
+        "detergent",
+        "laundry",
+        "household"
+      ],
+      "base_price": 12.99,
+      "sale_price": 11.49,
+      "loyalty_price": 10.99
+    },
+    {
+      "sku": "SKU-YOGURT-001",
+      "upc": "0001111040112",
+      "name": "Greek Yogurt",
+      "brand": "Simple Farms",
+      "category": "dairy",
+      "size": "32 oz",
+      "image_url": "https://placehold.co/320x240?text=Yogurt",
+      "tags": [
+        "yogurt",
+        "dairy",
+        "protein"
+      ],
+      "base_price": 5.29,
+      "sale_price": 4.79,
+      "loyalty_price": 4.59
+    },
+    {
+      "sku": "SKU-CHEESE-001",
+      "upc": "0001111040113",
+      "name": "Shredded Parmesan Cheese",
+      "brand": "Bella Dairy",
+      "category": "dairy",
+      "size": "8 oz",
+      "image_url": "https://placehold.co/320x240?text=Cheese",
+      "tags": [
+        "cheese",
+        "parmesan",
+        "pasta",
+        "dinner"
+      ],
+      "base_price": 4.99,
+      "sale_price": 4.49,
+      "loyalty_price": 4.19
+    },
+    {
+      "sku": "SKU-CHICKEN-001",
+      "upc": "0001111040114",
+      "name": "Boneless Chicken Breast",
+      "brand": "Fresh Market",
+      "category": "meat",
+      "size": "1 lb",
+      "image_url": "https://placehold.co/320x240?text=Chicken",
+      "tags": [
+        "chicken",
+        "protein",
+        "dinner"
+      ],
+      "base_price": 6.99,
+      "sale_price": 5.99,
+      "loyalty_price": 5.79
+    },
+    {
+      "sku": "SKU-SALAD-001",
+      "upc": "0001111040115",
+      "name": "Italian Salad Kit",
+      "brand": "Fresh Pick",
+      "category": "produce",
+      "size": "10 oz",
+      "image_url": "https://placehold.co/320x240?text=Salad",
+      "tags": [
+        "salad",
+        "dinner",
+        "produce",
+        "italian"
+      ],
+      "base_price": 4.49,
+      "sale_price": 3.99,
+      "loyalty_price": 3.79
+    }
+  ],
+  "inventory": [
+    {
+      "sku": "SKU-MILK-001",
+      "store_id": "store_1001",
+      "quantity_available": 6,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-MILK-001",
+      "store_id": "store_1002",
+      "quantity_available": 9,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-MILK-001",
+      "store_id": "store_1003",
+      "quantity_available": 12,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-EGGS-001",
+      "store_id": "store_1001",
+      "quantity_available": 8,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-EGGS-001",
+      "store_id": "store_1002",
+      "quantity_available": 12,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-EGGS-001",
+      "store_id": "store_1003",
+      "quantity_available": 16,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-BREAD-001",
+      "store_id": "store_1001",
+      "quantity_available": 10,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-BREAD-001",
+      "store_id": "store_1002",
+      "quantity_available": 15,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-BREAD-001",
+      "store_id": "store_1003",
+      "quantity_available": 2,
+      "stock_status": "low_stock",
+      "fulfillment_options": [
+        "pickup"
+      ]
+    },
+    {
+      "sku": "SKU-APPLE-001",
+      "store_id": "store_1001",
+      "quantity_available": 12,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-APPLE-001",
+      "store_id": "store_1002",
+      "quantity_available": 0,
+      "stock_status": "out_of_stock",
+      "fulfillment_options": []
+    },
+    {
+      "sku": "SKU-APPLE-001",
+      "store_id": "store_1003",
+      "quantity_available": 6,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-BANANA-001",
+      "store_id": "store_1001",
+      "quantity_available": 14,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-BANANA-001",
+      "store_id": "store_1002",
+      "quantity_available": 3,
+      "stock_status": "low_stock",
+      "fulfillment_options": [
+        "pickup"
+      ]
+    },
+    {
+      "sku": "SKU-BANANA-001",
+      "store_id": "store_1003",
+      "quantity_available": 10,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-PASTA-001",
+      "store_id": "store_1001",
+      "quantity_available": 16,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-PASTA-001",
+      "store_id": "store_1002",
+      "quantity_available": 6,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-PASTA-001",
+      "store_id": "store_1003",
+      "quantity_available": 14,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-SAUCE-001",
+      "store_id": "store_1001",
+      "quantity_available": 11,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-SAUCE-001",
+      "store_id": "store_1002",
+      "quantity_available": 9,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-SAUCE-001",
+      "store_id": "store_1003",
+      "quantity_available": 0,
+      "stock_status": "out_of_stock",
+      "fulfillment_options": []
+    },
+    {
+      "sku": "SKU-CEREAL-001",
+      "store_id": "store_1001",
+      "quantity_available": 2,
+      "stock_status": "low_stock",
+      "fulfillment_options": [
+        "pickup"
+      ]
+    },
+    {
+      "sku": "SKU-CEREAL-001",
+      "store_id": "store_1002",
+      "quantity_available": 12,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-CEREAL-001",
+      "store_id": "store_1003",
+      "quantity_available": 4,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-COFFEE-001",
+      "store_id": "store_1001",
+      "quantity_available": 4,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-COFFEE-001",
+      "store_id": "store_1002",
+      "quantity_available": 15,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-COFFEE-001",
+      "store_id": "store_1003",
+      "quantity_available": 8,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-TOWEL-001",
+      "store_id": "store_1001",
+      "quantity_available": 6,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-TOWEL-001",
+      "store_id": "store_1002",
+      "quantity_available": 0,
+      "stock_status": "out_of_stock",
+      "fulfillment_options": []
+    },
+    {
+      "sku": "SKU-TOWEL-001",
+      "store_id": "store_1003",
+      "quantity_available": 12,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-DETERGENT-001",
+      "store_id": "store_1001",
+      "quantity_available": 8,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-DETERGENT-001",
+      "store_id": "store_1002",
+      "quantity_available": 3,
+      "stock_status": "low_stock",
+      "fulfillment_options": [
+        "pickup"
+      ]
+    },
+    {
+      "sku": "SKU-DETERGENT-001",
+      "store_id": "store_1003",
+      "quantity_available": 16,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-YOGURT-001",
+      "store_id": "store_1001",
+      "quantity_available": 10,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-YOGURT-001",
+      "store_id": "store_1002",
+      "quantity_available": 6,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-YOGURT-001",
+      "store_id": "store_1003",
+      "quantity_available": 2,
+      "stock_status": "low_stock",
+      "fulfillment_options": [
+        "pickup"
+      ]
+    },
+    {
+      "sku": "SKU-CHEESE-001",
+      "store_id": "store_1001",
+      "quantity_available": 12,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-CHEESE-001",
+      "store_id": "store_1002",
+      "quantity_available": 9,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-CHEESE-001",
+      "store_id": "store_1003",
+      "quantity_available": 6,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-CHICKEN-001",
+      "store_id": "store_1001",
+      "quantity_available": 0,
+      "stock_status": "out_of_stock",
+      "fulfillment_options": []
+    },
+    {
+      "sku": "SKU-CHICKEN-001",
+      "store_id": "store_1002",
+      "quantity_available": 12,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-CHICKEN-001",
+      "store_id": "store_1003",
+      "quantity_available": 10,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-SALAD-001",
+      "store_id": "store_1001",
+      "quantity_available": 16,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    },
+    {
+      "sku": "SKU-SALAD-001",
+      "store_id": "store_1002",
+      "quantity_available": 2,
+      "stock_status": "low_stock",
+      "fulfillment_options": [
+        "pickup"
+      ]
+    },
+    {
+      "sku": "SKU-SALAD-001",
+      "store_id": "store_1003",
+      "quantity_available": 14,
+      "stock_status": "in_stock",
+      "fulfillment_options": [
+        "pickup",
+        "delivery"
+      ]
+    }
+  ],
+  "coupons": [
+    {
+      "code": "SAVE10",
+      "description": "10 percent off eligible grocery carts.",
+      "discount_type": "percent",
+      "discount_value": 10,
+      "minimum_cart_total": 20,
+      "expires_at": "2099-12-31T23:59:59Z",
+      "eligible_categories": [
+        "pantry",
+        "produce",
+        "dairy",
+        "bakery"
+      ],
+      "active": true
+    },
+    {
+      "code": "PASTA5",
+      "description": "$5 off pasta dinner basket over $25.",
+      "discount_type": "amount",
+      "discount_value": 5,
+      "minimum_cart_total": 25,
+      "expires_at": "2099-12-31T23:59:59Z",
+      "eligible_categories": [
+        "pantry",
+        "dairy",
+        "bakery",
+        "produce"
+      ],
+      "active": true
+    },
+    {
+      "code": "EXPIRED",
+      "description": "Expired training coupon.",
+      "discount_type": "percent",
+      "discount_value": 20,
+      "minimum_cart_total": 10,
+      "expires_at": "2020-01-01T00:00:00Z",
+      "eligible_categories": [
+        "pantry"
+      ],
+      "active": false
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "order_123",
+      "user_id": "demo_customer_001",
+      "cart_id": "cart_seeded",
+      "status": "ready_for_pickup",
+      "store_id": "store_1001",
+      "total": 18.27,
+      "items": [
+        {
+          "sku": "SKU-PASTA-001",
+          "quantity": 2
+        },
+        {
+          "sku": "SKU-SAUCE-001",
+          "quantity": 1
+        }
+      ],
+      "timeline": [
+        {
+          "event": "order_placed",
+          "timestamp": "2026-05-24T09:00:00Z"
+        },
+        {
+          "event": "order_ready_for_pickup",
+          "timestamp": "2026-05-24T10:15:00Z"
+        }
+      ]
+    }
+  ]
+}

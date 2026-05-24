@@ -1,0 +1,16 @@
+{
+  "id": "14",
+  "repo": "agentic-commerce-testing-evaluation",
+  "title": "Agentic Testing and Evaluation Framework",
+  "summary": "Golden dataset, API tests, contract tests, MCP schema tests, prompt injection tests, RBAC tests, and RAG evaluation notes.",
+  "copy": [
+    "backend",
+    "testing",
+    "mcp-server",
+    "pytest.ini",
+    "testing-strategy.md"
+  ],
+  "extra_tests": {},
+  "verify": "python3.11 -m pytest backend/tests testing",
+  "run": "python3.11 -m pytest backend/tests testing"
+}
