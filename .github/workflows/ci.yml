@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+# Shared checks from https://github.com/Naresh1401/github-cicd-workflows
+jobs:
+  python:
+    name: Python
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - directory: backend
+            python-version: '3.11'
+          - directory: mcp-server
+            python-version: '3.11'
+    uses: Naresh1401/github-cicd-workflows/.github/workflows/python-ci.yml@v1
+    with:
+      working-directory: ${{ matrix.directory }}
+      python-version: ${{ matrix.python-version }}
+
+  container:
+    name: Docker image
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - dockerfile: backend/Dockerfile
+            context: backend
+          - dockerfile: mcp-server/Dockerfile
+            context: mcp-server
+    uses: Naresh1401/github-cicd-workflows/.github/workflows/container.yml@v1
+    with:
+      dockerfile: ${{ matrix.dockerfile }}
+      context: ${{ matrix.context }}
+
+  repo-lint:
+    name: Repository lint
+    uses: Naresh1401/github-cicd-workflows/.github/workflows/repo-lint.yml@v1
